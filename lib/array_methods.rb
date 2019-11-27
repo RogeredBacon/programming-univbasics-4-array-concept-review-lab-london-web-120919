@@ -8,9 +8,23 @@ def find_element_index(array, value_to_find)
 end
 
 def find_max_value(array)
-  array.sort[-1]
+  # array.sort[-1]
+  num = 0
+  array.length.times { |index| 
+    if(array[index] > num)
+      num = array[index]
+    end
+  }
+  num
 end
 
 def find_min_value(array)
-  # Add your solution here
+  # array.sort[0]
+  num = 0
+  array.length.times { |index| 
+    if(array[index] < num)
+      num = array[index]
+    end
+  }
+  num
 end
